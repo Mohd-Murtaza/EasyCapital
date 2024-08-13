@@ -49,14 +49,14 @@ const Navbar = () => {
         <div className="flex flex-col items-center mt-8 space-y-4">
           {!auth ? (
             <>
-              <Link to="/signup" className="text-gray-800" onClick={() => setIsOpen(false)}>Signup</Link>
-              <Link to="/login" className="text-gray-800" onClick={() => setIsOpen(false)}>Login</Link>
+              <Link to="/signup" className="bg-blue-500 text-white px-4 py-2 rounded" onClick={() => setIsOpen(false)}>Signup</Link>
+              <Link to="/login" className="bg-green-500 text-white px-4 py-2 rounded" onClick={() => setIsOpen(false)}>Login</Link>
             </>
           ) : (
             <>
-              <Link to="/create" className="text-gray-800" onClick={() => setIsOpen(false)}>Create Blog</Link>
-              <Link to="/your-blogs" className="text-gray-800" onClick={() => setIsOpen(false)}>Your Blogs</Link>
-              <button onClick={handleLogout} className="text-gray-800">Logout</button>
+              <Link to="/create" className="bg-green-500 text-white px-4 py-2 rounded" onClick={() => setIsOpen(false)}>Create Blog</Link>
+              <Link to="/your-blogs" className="bg-green-500 text-white px-4 py-2 rounded" onClick={() => setIsOpen(false)}>Your Blogs</Link>
+              <button onClick={handleLogout} className="bg-red-500 text-white px-4 py-2 rounded">Logout</button>
             </>
           )}
         </div>
